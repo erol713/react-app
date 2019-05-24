@@ -1,0 +1,47 @@
+16d3503df5846bf5d90a90c1ad06225f
+"use strict";
+
+var _react = _interopRequireDefault(require("react"));
+
+var _enzyme = require("enzyme");
+
+var _enzymeAdapterReact = _interopRequireDefault(require("enzyme-adapter-react-16"));
+
+var _Photo = _interopRequireDefault(require("../../components/Photo"));
+
+function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { "default": obj }; }
+
+/* eslint-disable indent */
+(0, _enzyme.configure)({
+  adapter: new _enzymeAdapterReact["default"]()
+});
+
+var setUp = function setUp() {
+  var props = arguments.length > 0 && arguments[0] !== undefined ? arguments[0] : {};
+  var component = (0, _enzyme.shallow)(_react["default"].createElement(_Photo["default"], props));
+  return component;
+};
+
+describe('This is a Photo component', function () {
+  var content;
+  beforeEach(function () {
+    var props = {
+      key: 1,
+      i: 1,
+      post: {
+        caption: "Lunch #hamont",
+        code: "BAcyDyQwcXX",
+        dislikes: 34,
+        display_src: "https://picsum.photos/400/400/?image=25",
+        id: "1161022966406956503",
+        likes: 57,
+        userId: "1111"
+      }
+    };
+    content = setUp(props);
+  });
+  it('There is a Image', function () {
+    expect(content.find('img'));
+  });
+});
+//# sourceMappingURL=data:application/json;charset=utf-8;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbIlBob3RvVGVzdC5qc3giXSwibmFtZXMiOlsiYWRhcHRlciIsIkFkYXB0ZXIiLCJzZXRVcCIsInByb3BzIiwiY29tcG9uZW50IiwiZGVzY3JpYmUiLCJjb250ZW50IiwiYmVmb3JlRWFjaCIsImtleSIsImkiLCJwb3N0IiwiY2FwdGlvbiIsImNvZGUiLCJkaXNsaWtlcyIsImRpc3BsYXlfc3JjIiwiaWQiLCJsaWtlcyIsInVzZXJJZCIsIml0IiwiZXhwZWN0IiwiZmluZCJdLCJtYXBwaW5ncyI6Ijs7QUFDQTs7QUFDQTs7QUFDQTs7QUFDQTs7OztBQUpBO0FBTUEsdUJBQVU7QUFBRUEsRUFBQUEsT0FBTyxFQUFFLElBQUlDLDhCQUFKO0FBQVgsQ0FBVjs7QUFJQSxJQUFNQyxLQUFLLEdBQUcsU0FBUkEsS0FBUSxHQUFjO0FBQUEsTUFBYkMsS0FBYSx1RUFBUCxFQUFPO0FBQ3hCLE1BQU1DLFNBQVMsR0FBRyxxQkFBUSxnQ0FBQyxpQkFBRCxFQUFXRCxLQUFYLENBQVIsQ0FBbEI7QUFDQSxTQUFPQyxTQUFQO0FBRUgsQ0FKRDs7QUFLQUMsUUFBUSxDQUFDLDJCQUFELEVBQThCLFlBQUk7QUFFdEMsTUFBSUMsT0FBSjtBQUNBQyxFQUFBQSxVQUFVLENBQUMsWUFBTTtBQUNiLFFBQU1KLEtBQUssR0FBRztBQUNWSyxNQUFBQSxHQUFHLEVBQUUsQ0FESztBQUVWQyxNQUFBQSxDQUFDLEVBQUUsQ0FGTztBQUdWQyxNQUFBQSxJQUFJLEVBQUU7QUFDRkMsUUFBQUEsT0FBTyxFQUFFLGVBRFA7QUFFRkMsUUFBQUEsSUFBSSxFQUFFLGFBRko7QUFHRkMsUUFBQUEsUUFBUSxFQUFFLEVBSFI7QUFJRkMsUUFBQUEsV0FBVyxFQUFFLHlDQUpYO0FBS0ZDLFFBQUFBLEVBQUUsRUFBRSxxQkFMRjtBQU1GQyxRQUFBQSxLQUFLLEVBQUUsRUFOTDtBQU9GQyxRQUFBQSxNQUFNLEVBQUU7QUFQTjtBQUhJLEtBQWQ7QUFhQVgsSUFBQUEsT0FBTyxHQUFHSixLQUFLLENBQUNDLEtBQUQsQ0FBZjtBQUNILEdBZlMsQ0FBVjtBQWlCQWUsRUFBQUEsRUFBRSxDQUFDLGtCQUFELEVBQXFCLFlBQU07QUFDekJDLElBQUFBLE1BQU0sQ0FBQ2IsT0FBTyxDQUFDYyxJQUFSLENBQWEsS0FBYixDQUFELENBQU47QUFDSCxHQUZDLENBQUY7QUFHSCxDQXZCTyxDQUFSIiwic291cmNlc0NvbnRlbnQiOlsiLyogZXNsaW50LWRpc2FibGUgaW5kZW50ICovXG5pbXBvcnQgUmVhY3QgZnJvbSAncmVhY3QnO1xuaW1wb3J0IHsgY29uZmlndXJlLCBtb3VudCwgc2hhbGxvdyB9IGZyb20gJ2VuenltZSc7XG5pbXBvcnQgQWRhcHRlciBmcm9tICdlbnp5bWUtYWRhcHRlci1yZWFjdC0xNic7XG5pbXBvcnQgUGhvdG8gZnJvbSAnLi4vLi4vY29tcG9uZW50cy9QaG90byc7XG5cbmNvbmZpZ3VyZSh7IGFkYXB0ZXI6IG5ldyBBZGFwdGVyKCkgfSk7XG5cblxuXG5jb25zdCBzZXRVcCA9IChwcm9wcz17fSkgPT4ge1xuICAgIGNvbnN0IGNvbXBvbmVudCA9IHNoYWxsb3coPFBob3RvIHsuLi5wcm9wc30gLz4pO1xuICAgIHJldHVybiBjb21wb25lbnQ7XG5cbn1cbmRlc2NyaWJlKCdUaGlzIGlzIGEgUGhvdG8gY29tcG9uZW50JywgKCk9PntcblxuICAgIGxldCBjb250ZW50O1xuICAgIGJlZm9yZUVhY2goKCkgPT4ge1xuICAgICAgICBjb25zdCBwcm9wcyA9IHtcbiAgICAgICAgICAgIGtleTogMSxcbiAgICAgICAgICAgIGk6IDEsXG4gICAgICAgICAgICBwb3N0OiB7XG4gICAgICAgICAgICAgICAgY2FwdGlvbjogXCJMdW5jaCAjaGFtb250XCIsXG4gICAgICAgICAgICAgICAgY29kZTogXCJCQWN5RHlRd2NYWFwiLFxuICAgICAgICAgICAgICAgIGRpc2xpa2VzOiAzNCxcbiAgICAgICAgICAgICAgICBkaXNwbGF5X3NyYzogXCJodHRwczovL3BpY3N1bS5waG90b3MvNDAwLzQwMC8/aW1hZ2U9MjVcIixcbiAgICAgICAgICAgICAgICBpZDogXCIxMTYxMDIyOTY2NDA2OTU2NTAzXCIsXG4gICAgICAgICAgICAgICAgbGlrZXM6IDU3LFxuICAgICAgICAgICAgICAgIHVzZXJJZDogXCIxMTExXCIsXG4gICAgICAgICAgICB9LFxuICAgICAgICB9O1xuICAgICAgICBjb250ZW50ID0gc2V0VXAocHJvcHMpO1xuICAgIH0pO1xuXG4gICAgaXQoJ1RoZXJlIGlzIGEgSW1hZ2UnLCAoKSA9PiB7XG4gICAgICAgIGV4cGVjdChjb250ZW50LmZpbmQoJ2ltZycpKTtcbiAgICB9KTtcbn0pOyJdfQ==

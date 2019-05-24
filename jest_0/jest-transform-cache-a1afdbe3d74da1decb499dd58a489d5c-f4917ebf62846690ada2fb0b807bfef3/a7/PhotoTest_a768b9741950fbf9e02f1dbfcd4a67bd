@@ -1,0 +1,47 @@
+cba1b8738a95e38edcab6d7689734004
+"use strict";
+
+var _react = _interopRequireDefault(require("react"));
+
+var _enzyme = require("enzyme");
+
+var _enzymeAdapterReact = _interopRequireDefault(require("enzyme-adapter-react-16"));
+
+var _Photo = _interopRequireDefault(require("../../components/Photo"));
+
+function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { "default": obj }; }
+
+/* eslint-disable indent */
+(0, _enzyme.configure)({
+  adapter: new _enzymeAdapterReact["default"]()
+});
+
+var setUp = function setUp() {
+  var props = arguments.length > 0 && arguments[0] !== undefined ? arguments[0] : {};
+  var component = (0, _enzyme.shallow)(_react["default"].createElement(_Photo["default"], props));
+  return component;
+};
+
+describe('This is a Photo component', function () {
+  var content;
+  beforeEach(function () {
+    var props = {
+      key: 1,
+      i: 1,
+      post: {
+        caption: 'test',
+        code: 'BAcyDyQwcXX',
+        dislikes: 34,
+        display_src: 'https://picsum.photos/400/400/?image=25',
+        id: '1161022966406956503',
+        likes: 57,
+        userId: '1111'
+      }
+    };
+    content = setUp(props);
+  });
+  it('There is a Image', function () {
+    expect(content.find('img'));
+  });
+});
+//# sourceMappingURL=data:application/json;charset=utf-8;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbIlBob3RvVGVzdC5qc3giXSwibmFtZXMiOlsiYWRhcHRlciIsIkFkYXB0ZXIiLCJzZXRVcCIsInByb3BzIiwiY29tcG9uZW50IiwiZGVzY3JpYmUiLCJjb250ZW50IiwiYmVmb3JlRWFjaCIsImtleSIsImkiLCJwb3N0IiwiY2FwdGlvbiIsImNvZGUiLCJkaXNsaWtlcyIsImRpc3BsYXlfc3JjIiwiaWQiLCJsaWtlcyIsInVzZXJJZCIsIml0IiwiZXhwZWN0IiwiZmluZCJdLCJtYXBwaW5ncyI6Ijs7QUFDQTs7QUFDQTs7QUFDQTs7QUFDQTs7OztBQUpBO0FBTUEsdUJBQVU7QUFBRUEsRUFBQUEsT0FBTyxFQUFFLElBQUlDLDhCQUFKO0FBQVgsQ0FBVjs7QUFFQSxJQUFNQyxLQUFLLEdBQUcsU0FBUkEsS0FBUSxHQUFnQjtBQUFBLE1BQWZDLEtBQWUsdUVBQVAsRUFBTztBQUMxQixNQUFNQyxTQUFTLEdBQUcscUJBQVEsZ0NBQUMsaUJBQUQsRUFBV0QsS0FBWCxDQUFSLENBQWxCO0FBQ0EsU0FBT0MsU0FBUDtBQUNILENBSEQ7O0FBS0FDLFFBQVEsQ0FBQywyQkFBRCxFQUE4QixZQUFNO0FBQ3hDLE1BQUlDLE9BQUo7QUFDQUMsRUFBQUEsVUFBVSxDQUFDLFlBQU07QUFDYixRQUFNSixLQUFLLEdBQUc7QUFDVkssTUFBQUEsR0FBRyxFQUFFLENBREs7QUFFVkMsTUFBQUEsQ0FBQyxFQUFFLENBRk87QUFHVkMsTUFBQUEsSUFBSSxFQUFFO0FBQ0ZDLFFBQUFBLE9BQU8sRUFBRSxNQURQO0FBRUZDLFFBQUFBLElBQUksRUFBRSxhQUZKO0FBR0ZDLFFBQUFBLFFBQVEsRUFBRSxFQUhSO0FBSUZDLFFBQUFBLFdBQVcsRUFBRSx5Q0FKWDtBQUtGQyxRQUFBQSxFQUFFLEVBQUUscUJBTEY7QUFNRkMsUUFBQUEsS0FBSyxFQUFFLEVBTkw7QUFPRkMsUUFBQUEsTUFBTSxFQUFFO0FBUE47QUFISSxLQUFkO0FBYUFYLElBQUFBLE9BQU8sR0FBR0osS0FBSyxDQUFDQyxLQUFELENBQWY7QUFDSCxHQWZTLENBQVY7QUFpQkFlLEVBQUFBLEVBQUUsQ0FBQyxrQkFBRCxFQUFxQixZQUFNO0FBQ3pCQyxJQUFBQSxNQUFNLENBQUNiLE9BQU8sQ0FBQ2MsSUFBUixDQUFhLEtBQWIsQ0FBRCxDQUFOO0FBQ1AsR0FGSyxDQUFGO0FBR0gsQ0F0Qk8sQ0FBUiIsInNvdXJjZXNDb250ZW50IjpbIi8qIGVzbGludC1kaXNhYmxlIGluZGVudCAqL1xuaW1wb3J0IFJlYWN0IGZyb20gJ3JlYWN0JztcbmltcG9ydCB7IGNvbmZpZ3VyZSwgc2hhbGxvdyB9IGZyb20gJ2VuenltZSc7XG5pbXBvcnQgQWRhcHRlciBmcm9tICdlbnp5bWUtYWRhcHRlci1yZWFjdC0xNic7XG5pbXBvcnQgUGhvdG8gZnJvbSAnLi4vLi4vY29tcG9uZW50cy9QaG90byc7XG5cbmNvbmZpZ3VyZSh7IGFkYXB0ZXI6IG5ldyBBZGFwdGVyKCkgfSk7XG5cbmNvbnN0IHNldFVwID0gKHByb3BzID0ge30pID0+IHtcbiAgICBjb25zdCBjb21wb25lbnQgPSBzaGFsbG93KDxQaG90byB7Li4ucHJvcHN9IC8+KTtcbiAgICByZXR1cm4gY29tcG9uZW50O1xufTtcblxuZGVzY3JpYmUoJ1RoaXMgaXMgYSBQaG90byBjb21wb25lbnQnLCAoKSA9PiB7XG4gICAgbGV0IGNvbnRlbnQ7XG4gICAgYmVmb3JlRWFjaCgoKSA9PiB7XG4gICAgICAgIGNvbnN0IHByb3BzID0ge1xuICAgICAgICAgICAga2V5OiAxLFxuICAgICAgICAgICAgaTogMSxcbiAgICAgICAgICAgIHBvc3Q6IHtcbiAgICAgICAgICAgICAgICBjYXB0aW9uOiAndGVzdCcsXG4gICAgICAgICAgICAgICAgY29kZTogJ0JBY3lEeVF3Y1hYJyxcbiAgICAgICAgICAgICAgICBkaXNsaWtlczogMzQsXG4gICAgICAgICAgICAgICAgZGlzcGxheV9zcmM6ICdodHRwczovL3BpY3N1bS5waG90b3MvNDAwLzQwMC8/aW1hZ2U9MjUnLFxuICAgICAgICAgICAgICAgIGlkOiAnMTE2MTAyMjk2NjQwNjk1NjUwMycsXG4gICAgICAgICAgICAgICAgbGlrZXM6IDU3LFxuICAgICAgICAgICAgICAgIHVzZXJJZDogJzExMTEnLFxuICAgICAgICAgICAgfSxcbiAgICAgICAgfTtcbiAgICAgICAgY29udGVudCA9IHNldFVwKHByb3BzKTtcbiAgICB9KTtcblxuICAgIGl0KCdUaGVyZSBpcyBhIEltYWdlJywgKCkgPT4ge1xuICAgICAgICBleHBlY3QoY29udGVudC5maW5kKCdpbWcnKSk7XG59KTtcbn0pO1xuIl19

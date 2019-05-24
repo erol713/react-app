@@ -1,0 +1,98 @@
+3985f85cbe2355e4fa9097c025370008
+"use strict";
+
+Object.defineProperty(exports, "__esModule", {
+  value: true
+});
+exports["default"] = void 0;
+
+var _react = _interopRequireDefault(require("react"));
+
+var _semanticUiReact = require("semantic-ui-react");
+
+var _reactRouterDom = require("react-router-dom");
+
+function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { "default": obj }; }
+
+function _typeof(obj) { if (typeof Symbol === "function" && typeof Symbol.iterator === "symbol") { _typeof = function _typeof(obj) { return typeof obj; }; } else { _typeof = function _typeof(obj) { return obj && typeof Symbol === "function" && obj.constructor === Symbol && obj !== Symbol.prototype ? "symbol" : typeof obj; }; } return _typeof(obj); }
+
+function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
+
+function _defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } }
+
+function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _defineProperties(Constructor.prototype, protoProps); if (staticProps) _defineProperties(Constructor, staticProps); return Constructor; }
+
+function _possibleConstructorReturn(self, call) { if (call && (_typeof(call) === "object" || typeof call === "function")) { return call; } return _assertThisInitialized(self); }
+
+function _getPrototypeOf(o) { _getPrototypeOf = Object.setPrototypeOf ? Object.getPrototypeOf : function _getPrototypeOf(o) { return o.__proto__ || Object.getPrototypeOf(o); }; return _getPrototypeOf(o); }
+
+function _assertThisInitialized(self) { if (self === void 0) { throw new ReferenceError("this hasn't been initialised - super() hasn't been called"); } return self; }
+
+function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function"); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, writable: true, configurable: true } }); if (superClass) _setPrototypeOf(subClass, superClass); }
+
+function _setPrototypeOf(o, p) { _setPrototypeOf = Object.setPrototypeOf || function _setPrototypeOf(o, p) { o.__proto__ = p; return o; }; return _setPrototypeOf(o, p); }
+
+function _defineProperty(obj, key, value) { if (key in obj) { Object.defineProperty(obj, key, { value: value, enumerable: true, configurable: true, writable: true }); } else { obj[key] = value; } return obj; }
+
+var MenuBar =
+/*#__PURE__*/
+function (_React$Component) {
+  _inherits(MenuBar, _React$Component);
+
+  function MenuBar(props) {
+    var _this;
+
+    _classCallCheck(this, MenuBar);
+
+    _this = _possibleConstructorReturn(this, _getPrototypeOf(MenuBar).call(this, props));
+
+    _defineProperty(_assertThisInitialized(_this), "state", {
+      activeItem: 'Home'
+    });
+
+    _defineProperty(_assertThisInitialized(_this), "handleItemClick", function (e, _ref) {
+      var name = _ref.name;
+      return _this.setState({
+        activeItem: name
+      });
+    });
+
+    return _this;
+  }
+
+  _createClass(MenuBar, [{
+    key: "render",
+    value: function render() {
+      var activeItem = this.state.activeItem;
+      return _react["default"].createElement(_semanticUiReact.Menu, {
+        pointing: true,
+        secondary: true,
+        id: "menu"
+      }, _react["default"].createElement(_semanticUiReact.Menu.Item, {
+        as: _reactRouterDom.Link,
+        name: "Home",
+        active: activeItem === 'Home',
+        onClick: this.handleItemClick,
+        to: "/"
+      }, "Home"), _react["default"].createElement(_semanticUiReact.Menu.Item, {
+        as: _reactRouterDom.Link,
+        name: "addProfile",
+        active: activeItem === 'addProfile',
+        onClick: this.handleItemClick,
+        to: "/add"
+      }, "Add profile"), _react["default"].createElement(_semanticUiReact.Menu.Item, {
+        as: _reactRouterDom.Link,
+        name: "allProfiles",
+        active: activeItem === 'allprofiles',
+        onClick: this.handleItemClick,
+        to: "/all"
+      }, "All profiles"));
+    }
+  }]);
+
+  return MenuBar;
+}(_react["default"].Component);
+
+var _default = MenuBar;
+exports["default"] = _default;
+//# sourceMappingURL=data:application/json;charset=utf-8;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbIm1lbnUuanN4Il0sIm5hbWVzIjpbIk1lbnVCYXIiLCJwcm9wcyIsImFjdGl2ZUl0ZW0iLCJlIiwibmFtZSIsInNldFN0YXRlIiwic3RhdGUiLCJMaW5rIiwiaGFuZGxlSXRlbUNsaWNrIiwiUmVhY3QiLCJDb21wb25lbnQiXSwibWFwcGluZ3MiOiI7Ozs7Ozs7QUFBQTs7QUFDQTs7QUFDQTs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7O0lBR01BLE87Ozs7O0FBQ0osbUJBQVlDLEtBQVosRUFBa0I7QUFBQTs7QUFBQTs7QUFDaEIsaUZBQU1BLEtBQU47O0FBRGdCLDREQUlWO0FBQUVDLE1BQUFBLFVBQVUsRUFBRTtBQUFkLEtBSlU7O0FBQUEsc0VBS0EsVUFBQ0MsQ0FBRDtBQUFBLFVBQU1DLElBQU4sUUFBTUEsSUFBTjtBQUFBLGFBQWlCLE1BQUtDLFFBQUwsQ0FBYztBQUFFSCxRQUFBQSxVQUFVLEVBQUVFO0FBQWQsT0FBZCxDQUFqQjtBQUFBLEtBTEE7O0FBQUE7QUFFakI7Ozs7NkJBS1E7QUFBQSxVQUNDRixVQURELEdBQ2dCLEtBQUtJLEtBRHJCLENBQ0NKLFVBREQ7QUFHUCxhQUNFLGdDQUFDLHFCQUFEO0FBQU8sUUFBQSxRQUFRLE1BQWY7QUFBZ0IsUUFBQSxTQUFTLE1BQXpCO0FBQTBCLFFBQUEsRUFBRSxFQUFFO0FBQTlCLFNBQ0UsZ0NBQUMscUJBQUQsQ0FBTSxJQUFOO0FBQVcsUUFBQSxFQUFFLEVBQUdLLG9CQUFoQjtBQUNFLFFBQUEsSUFBSSxFQUFDLE1BRFA7QUFFRSxRQUFBLE1BQU0sRUFBRUwsVUFBVSxLQUFLLE1BRnpCO0FBR0UsUUFBQSxPQUFPLEVBQUUsS0FBS00sZUFIaEI7QUFJRSxRQUFBLEVBQUUsRUFBRTtBQUpOLGdCQURGLEVBU0UsZ0NBQUMscUJBQUQsQ0FBTSxJQUFOO0FBQVcsUUFBQSxFQUFFLEVBQUdELG9CQUFoQjtBQUNFLFFBQUEsSUFBSSxFQUFDLFlBRFA7QUFFRSxRQUFBLE1BQU0sRUFBRUwsVUFBVSxLQUFLLFlBRnpCO0FBR0UsUUFBQSxPQUFPLEVBQUUsS0FBS00sZUFIaEI7QUFJRSxRQUFBLEVBQUUsRUFBRTtBQUpOLHVCQVRGLEVBaUJFLGdDQUFDLHFCQUFELENBQU0sSUFBTjtBQUFXLFFBQUEsRUFBRSxFQUFHRCxvQkFBaEI7QUFDRSxRQUFBLElBQUksRUFBQyxhQURQO0FBRUUsUUFBQSxNQUFNLEVBQUVMLFVBQVUsS0FBSyxhQUZ6QjtBQUdFLFFBQUEsT0FBTyxFQUFFLEtBQUtNLGVBSGhCO0FBSUUsUUFBQSxFQUFFLEVBQUU7QUFKTix3QkFqQkYsQ0FERjtBQTJCRDs7OztFQXRDbUJDLGtCQUFNQyxTOztlQXlDYlYsTyIsInNvdXJjZXNDb250ZW50IjpbImltcG9ydCBSZWFjdCBmcm9tICdyZWFjdCc7XG5pbXBvcnQgeyBNZW51IH0gZnJvbSAnc2VtYW50aWMtdWktcmVhY3QnO1xuaW1wb3J0IHtMaW5rfSBmcm9tICdyZWFjdC1yb3V0ZXItZG9tJztcblxuXG5jbGFzcyBNZW51QmFyIGV4dGVuZHMgUmVhY3QuQ29tcG9uZW50IHtcbiAgY29uc3RydWN0b3IocHJvcHMpe1xuICAgIHN1cGVyKHByb3BzKTtcbiAgfVxuXG4gIHN0YXRlID0geyBhY3RpdmVJdGVtOiAnSG9tZSd9OyAgXG4gIGhhbmRsZUl0ZW1DbGljayA9IChlLCB7IG5hbWUgfSkgPT4gdGhpcy5zZXRTdGF0ZSh7IGFjdGl2ZUl0ZW06IG5hbWUgfSk7XG4gIFxuICByZW5kZXIoKSB7XG4gICAgY29uc3QgeyBhY3RpdmVJdGVtIH0gPSB0aGlzLnN0YXRlXG5cbiAgICByZXR1cm4gKFxuICAgICAgPE1lbnUgIHBvaW50aW5nIHNlY29uZGFyeSBpZCA9XCJtZW51XCI+XG4gICAgICAgIDxNZW51Lkl0ZW0gYXM9IHtMaW5rfVxuICAgICAgICAgIG5hbWU9J0hvbWUnXG4gICAgICAgICAgYWN0aXZlPXthY3RpdmVJdGVtID09PSAnSG9tZSd9XG4gICAgICAgICAgb25DbGljaz17dGhpcy5oYW5kbGVJdGVtQ2xpY2t9XG4gICAgICAgICAgdG8gPVwiL1wiPlxuICAgICAgICAgIEhvbWVcbiAgICAgICAgPC9NZW51Lkl0ZW0+XG5cbiAgICAgICAgPE1lbnUuSXRlbSBhcz0ge0xpbmt9XG4gICAgICAgICAgbmFtZT0nYWRkUHJvZmlsZSdcbiAgICAgICAgICBhY3RpdmU9e2FjdGl2ZUl0ZW0gPT09ICdhZGRQcm9maWxlJ31cbiAgICAgICAgICBvbkNsaWNrPXt0aGlzLmhhbmRsZUl0ZW1DbGlja31cbiAgICAgICAgICB0byA9XCIvYWRkXCI+XG4gICAgICAgICAgQWRkIHByb2ZpbGVcbiAgICAgICAgPC9NZW51Lkl0ZW0+XG5cbiAgICAgICAgPE1lbnUuSXRlbSBhcz0ge0xpbmt9XG4gICAgICAgICAgbmFtZT0nYWxsUHJvZmlsZXMnXG4gICAgICAgICAgYWN0aXZlPXthY3RpdmVJdGVtID09PSAnYWxscHJvZmlsZXMnfVxuICAgICAgICAgIG9uQ2xpY2s9e3RoaXMuaGFuZGxlSXRlbUNsaWNrfVxuICAgICAgICAgIHRvID1cIi9hbGxcIj5cbiAgICAgICAgICBBbGwgcHJvZmlsZXNcbiAgICAgICAgPC9NZW51Lkl0ZW0+XG4gICAgICA8L01lbnU+XG4gICAgKVxuICB9XG59XG5cbmV4cG9ydCBkZWZhdWx0IE1lbnVCYXI7Il19

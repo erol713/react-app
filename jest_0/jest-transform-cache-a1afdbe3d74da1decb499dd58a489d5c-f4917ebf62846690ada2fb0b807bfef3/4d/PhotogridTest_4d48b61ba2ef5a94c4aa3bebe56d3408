@@ -1,0 +1,24 @@
+1987e88ac538934b1de84eb479aa8c51
+"use strict";
+
+var _react = _interopRequireDefault(require("react"));
+
+var _enzyme = require("enzyme");
+
+var _enzymeAdapterReact = _interopRequireDefault(require("enzyme-adapter-react-16"));
+
+var _Photogrid = _interopRequireDefault(require("../../components/Photogrid"));
+
+function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { "default": obj }; }
+
+(0, _enzyme.configure)({
+  adapter: new _enzymeAdapterReact["default"]()
+});
+describe('This is a Photogrid component', function () {
+  it('There is a photogrid class', function () {
+    var component = (0, _enzyme.mount)(_react["default"].createElement(_Photogrid["default"], null));
+    console.log(component.debug());
+    var content = component.find('photo-grid');
+  });
+});
+//# sourceMappingURL=data:application/json;charset=utf-8;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbIlBob3RvZ3JpZFRlc3QuanMiXSwibmFtZXMiOlsiYWRhcHRlciIsIkFkYXB0ZXIiLCJkZXNjcmliZSIsIml0IiwiY29tcG9uZW50IiwiY29uc29sZSIsImxvZyIsImRlYnVnIiwiY29udGVudCIsImZpbmQiXSwibWFwcGluZ3MiOiI7O0FBQUE7O0FBQ0E7O0FBQ0E7O0FBSUE7Ozs7QUFGQSx1QkFBVTtBQUFFQSxFQUFBQSxPQUFPLEVBQUUsSUFBSUMsOEJBQUo7QUFBWCxDQUFWO0FBS0FDLFFBQVEsQ0FBQywrQkFBRCxFQUFrQyxZQUFJO0FBQzFDQyxFQUFBQSxFQUFFLENBQUMsNEJBQUQsRUFBK0IsWUFBTTtBQUNuQyxRQUFNQyxTQUFTLEdBQUcsbUJBQU8sZ0NBQUMscUJBQUQsT0FBUCxDQUFsQjtBQUNBQyxJQUFBQSxPQUFPLENBQUNDLEdBQVIsQ0FBWUYsU0FBUyxDQUFDRyxLQUFWLEVBQVo7QUFDQSxRQUFNQyxPQUFPLEdBQUdKLFNBQVMsQ0FBQ0ssSUFBVixDQUFlLFlBQWYsQ0FBaEI7QUFHSCxHQU5DLENBQUY7QUFPSCxDQVJPLENBQVIiLCJzb3VyY2VzQ29udGVudCI6WyJpbXBvcnQgUmVhY3QgZnJvbSAncmVhY3QnO1xuaW1wb3J0IHsgY29uZmlndXJlLCBtb3VudCwgc2hhbGxvdyB9IGZyb20gJ2VuenltZSc7XG5pbXBvcnQgQWRhcHRlciBmcm9tICdlbnp5bWUtYWRhcHRlci1yZWFjdC0xNic7XG5cbmNvbmZpZ3VyZSh7IGFkYXB0ZXI6IG5ldyBBZGFwdGVyKCkgfSk7XG5cbmltcG9ydCBQaG90b2dyaWQgZnJvbSAnLi4vLi4vY29tcG9uZW50cy9QaG90b2dyaWQnO1xuXG5cbmRlc2NyaWJlKCdUaGlzIGlzIGEgUGhvdG9ncmlkIGNvbXBvbmVudCcsICgpPT57XG4gICAgaXQoJ1RoZXJlIGlzIGEgcGhvdG9ncmlkIGNsYXNzJywgKCkgPT4ge1xuICAgICAgICBjb25zdCBjb21wb25lbnQgPSBtb3VudCggPFBob3RvZ3JpZCAvPiApO1xuICAgICAgICBjb25zb2xlLmxvZyhjb21wb25lbnQuZGVidWcoKSlcbiAgICAgICAgY29uc3QgY29udGVudCA9IGNvbXBvbmVudC5maW5kKCdwaG90by1ncmlkJyk7XG4gICAgICAgIFxuXG4gICAgfSk7XG59KVxuXG5cbiJdfQ==

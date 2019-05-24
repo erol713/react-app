@@ -1,0 +1,20 @@
+9c4f3a9fdbeb2cb2a5c7a81c2317ee62
+"use strict";
+
+var _react = _interopRequireDefault(require("react"));
+
+var _enzyme = require("enzyme");
+
+var _enzymeAdapterReact = _interopRequireDefault(require("enzyme-adapter-react-16"));
+
+var _Photogrid = _interopRequireDefault(require("../../components/Photogrid"));
+
+function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { "default": obj }; }
+
+(0, _enzyme.configure)({
+  adapter: new _enzymeAdapterReact["default"]()
+});
+test('This is a Photogrid component', function () {
+  (0, _enzyme.shallow)(_react["default"].createElement(_Photogrid["default"], null));
+});
+//# sourceMappingURL=data:application/json;charset=utf-8;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbIlBob3RvZ3JpZFRlc3QuanMiXSwibmFtZXMiOlsiYWRhcHRlciIsIkFkYXB0ZXIiLCJ0ZXN0Il0sIm1hcHBpbmdzIjoiOztBQUFBOztBQUNBOztBQUNBOztBQUlBOzs7O0FBRkEsdUJBQVU7QUFBRUEsRUFBQUEsT0FBTyxFQUFFLElBQUlDLDhCQUFKO0FBQVgsQ0FBVjtBQUlBQyxJQUFJLENBQUMsK0JBQUQsRUFBa0MsWUFBSTtBQUN0Qyx1QkFBUyxnQ0FBQyxxQkFBRCxPQUFUO0FBQ0gsQ0FGRyxDQUFKIiwic291cmNlc0NvbnRlbnQiOlsiaW1wb3J0IFJlYWN0IGZyb20gJ3JlYWN0JztcbmltcG9ydCB7IGNvbmZpZ3VyZSwgbW91bnQsIHNoYWxsb3cgfSBmcm9tICdlbnp5bWUnO1xuaW1wb3J0IEFkYXB0ZXIgZnJvbSAnZW56eW1lLWFkYXB0ZXItcmVhY3QtMTYnO1xuXG5jb25maWd1cmUoeyBhZGFwdGVyOiBuZXcgQWRhcHRlcigpIH0pO1xuXG5pbXBvcnQgUGhvdG9ncmlkIGZyb20gJy4uLy4uL2NvbXBvbmVudHMvUGhvdG9ncmlkJztcblxudGVzdCgnVGhpcyBpcyBhIFBob3RvZ3JpZCBjb21wb25lbnQnLCAoKT0+e1xuICAgIHNoYWxsb3coIDxQaG90b2dyaWQgLz4gKTtcbn0pXG5cblxuIl19

@@ -1,0 +1,21 @@
+62bf88210267e1781ccca3fe79bffe19
+// import React from 'react';
+// import { configure, mount, shallow } from 'enzyme';
+// import Adapter from 'enzyme-adapter-react-16';
+// configure({ adapter: new Adapter() });
+// import Photo from '../../components/Photo';
+// const setUp = (props={}) => {
+//     const component = shallow( <Photo {...props} /> );
+//     return component;
+// }
+// describe('This is a Photo component', ()=>{
+//     let component;
+//     beforeEach( ()=>{
+//         component = setUp();
+//     });
+//     it('There is a Image', () => {
+//         expect(component.find('img'));
+//     });
+// })
+"use strict";
+//# sourceMappingURL=data:application/json;charset=utf-8;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbIlBob3RvVGVzdC5qcyJdLCJuYW1lcyI6W10sIm1hcHBpbmdzIjoiQUFBQTtBQUNBO0FBQ0E7QUFFQTtBQUVBO0FBRUE7QUFDQTtBQUNBO0FBRUE7QUFDQTtBQUVBO0FBQ0E7QUFDQTtBQUNBO0FBRUE7QUFDQTtBQUNBO0FBQ0EiLCJzb3VyY2VzQ29udGVudCI6WyIvLyBpbXBvcnQgUmVhY3QgZnJvbSAncmVhY3QnO1xuLy8gaW1wb3J0IHsgY29uZmlndXJlLCBtb3VudCwgc2hhbGxvdyB9IGZyb20gJ2VuenltZSc7XG4vLyBpbXBvcnQgQWRhcHRlciBmcm9tICdlbnp5bWUtYWRhcHRlci1yZWFjdC0xNic7XG5cbi8vIGNvbmZpZ3VyZSh7IGFkYXB0ZXI6IG5ldyBBZGFwdGVyKCkgfSk7XG5cbi8vIGltcG9ydCBQaG90byBmcm9tICcuLi8uLi9jb21wb25lbnRzL1Bob3RvJztcblxuLy8gY29uc3Qgc2V0VXAgPSAocHJvcHM9e30pID0+IHtcbi8vICAgICBjb25zdCBjb21wb25lbnQgPSBzaGFsbG93KCA8UGhvdG8gey4uLnByb3BzfSAvPiApO1xuLy8gICAgIHJldHVybiBjb21wb25lbnQ7XG5cbi8vIH1cbi8vIGRlc2NyaWJlKCdUaGlzIGlzIGEgUGhvdG8gY29tcG9uZW50JywgKCk9PntcblxuLy8gICAgIGxldCBjb21wb25lbnQ7XG4vLyAgICAgYmVmb3JlRWFjaCggKCk9Pntcbi8vICAgICAgICAgY29tcG9uZW50ID0gc2V0VXAoKTtcbi8vICAgICB9KTtcblxuLy8gICAgIGl0KCdUaGVyZSBpcyBhIEltYWdlJywgKCkgPT4ge1xuLy8gICAgICAgICBleHBlY3QoY29tcG9uZW50LmZpbmQoJ2ltZycpKTtcbi8vICAgICB9KTtcbi8vIH0pXG5cblxuIl19

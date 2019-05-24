@@ -1,0 +1,24 @@
+c7ba5d8edcf8e114308e8b8779f27fd6
+"use strict";
+
+var _react = _interopRequireDefault(require("react"));
+
+var _enzyme = require("enzyme");
+
+var _enzymeAdapterReact = _interopRequireDefault(require("enzyme-adapter-react-16"));
+
+var _Photogrid = _interopRequireDefault(require("../../components/Photogrid"));
+
+function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { "default": obj }; }
+
+(0, _enzyme.configure)({
+  adapter: new _enzymeAdapterReact["default"]()
+});
+describe('This is a Photogrid component', function () {
+  it('There is a header', function () {
+    var component = (0, _enzyme.shallow)(_react["default"].createElement(_Photogrid["default"], null));
+    var content = component.find('photo-grid');
+    console.log(content.debug());
+  });
+});
+//# sourceMappingURL=data:application/json;charset=utf-8;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbIlBob3RvZ3JpZFRlc3QuanMiXSwibmFtZXMiOlsiYWRhcHRlciIsIkFkYXB0ZXIiLCJkZXNjcmliZSIsIml0IiwiY29tcG9uZW50IiwiY29udGVudCIsImZpbmQiLCJjb25zb2xlIiwibG9nIiwiZGVidWciXSwibWFwcGluZ3MiOiI7O0FBQUE7O0FBQ0E7O0FBQ0E7O0FBSUE7Ozs7QUFGQSx1QkFBVTtBQUFFQSxFQUFBQSxPQUFPLEVBQUUsSUFBSUMsOEJBQUo7QUFBWCxDQUFWO0FBS0FDLFFBQVEsQ0FBQywrQkFBRCxFQUFrQyxZQUFJO0FBQzFDQyxFQUFBQSxFQUFFLENBQUMsbUJBQUQsRUFBc0IsWUFBTTtBQUMxQixRQUFNQyxTQUFTLEdBQUcscUJBQVMsZ0NBQUMscUJBQUQsT0FBVCxDQUFsQjtBQUNBLFFBQU1DLE9BQU8sR0FBR0QsU0FBUyxDQUFDRSxJQUFWLENBQWUsWUFBZixDQUFoQjtBQUNBQyxJQUFBQSxPQUFPLENBQUNDLEdBQVIsQ0FBWUgsT0FBTyxDQUFDSSxLQUFSLEVBQVo7QUFFSCxHQUxDLENBQUY7QUFNSCxDQVBPLENBQVIiLCJzb3VyY2VzQ29udGVudCI6WyJpbXBvcnQgUmVhY3QgZnJvbSAncmVhY3QnO1xuaW1wb3J0IHsgY29uZmlndXJlLCBtb3VudCwgc2hhbGxvdyB9IGZyb20gJ2VuenltZSc7XG5pbXBvcnQgQWRhcHRlciBmcm9tICdlbnp5bWUtYWRhcHRlci1yZWFjdC0xNic7XG5cbmNvbmZpZ3VyZSh7IGFkYXB0ZXI6IG5ldyBBZGFwdGVyKCkgfSk7XG5cbmltcG9ydCBQaG90b2dyaWQgZnJvbSAnLi4vLi4vY29tcG9uZW50cy9QaG90b2dyaWQnO1xuXG5cbmRlc2NyaWJlKCdUaGlzIGlzIGEgUGhvdG9ncmlkIGNvbXBvbmVudCcsICgpPT57XG4gICAgaXQoJ1RoZXJlIGlzIGEgaGVhZGVyJywgKCkgPT4ge1xuICAgICAgICBjb25zdCBjb21wb25lbnQgPSBzaGFsbG93KCA8UGhvdG9ncmlkIC8+ICk7XG4gICAgICAgIGNvbnN0IGNvbnRlbnQgPSBjb21wb25lbnQuZmluZCgncGhvdG8tZ3JpZCcpO1xuICAgICAgICBjb25zb2xlLmxvZyhjb250ZW50LmRlYnVnKCkpXG5cbiAgICB9KTtcbn0pXG5cblxuIl19

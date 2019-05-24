@@ -1,0 +1,24 @@
+09bb0fe79304c6d6c50a2bae455b1c18
+"use strict";
+
+var _react = _interopRequireDefault(require("react"));
+
+var _enzyme = require("enzyme");
+
+var _enzymeAdapterReact = _interopRequireDefault(require("enzyme-adapter-react-16"));
+
+var _Photogrid = _interopRequireDefault(require("../../components/Photogrid"));
+
+function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { "default": obj }; }
+
+(0, _enzyme.configure)({
+  adapter: new _enzymeAdapterReact["default"]()
+});
+describe('This is a Photogrid component', function () {
+  it('There is a header', function () {
+    var component = (0, _enzyme.shallow)(_react["default"].createElement(_Photogrid["default"], null));
+    var content = component.find('photo-grid');
+    console.log(content.debug());
+  });
+});
+//# sourceMappingURL=data:application/json;charset=utf-8;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbIlByb2ZpbGVUZXN0LmpzIl0sIm5hbWVzIjpbImFkYXB0ZXIiLCJBZGFwdGVyIiwiZGVzY3JpYmUiLCJpdCIsImNvbXBvbmVudCIsImNvbnRlbnQiLCJmaW5kIiwiY29uc29sZSIsImxvZyIsImRlYnVnIl0sIm1hcHBpbmdzIjoiOztBQUFBOztBQUNBOztBQUNBOztBQUlBOzs7O0FBRkEsdUJBQVU7QUFBRUEsRUFBQUEsT0FBTyxFQUFFLElBQUlDLDhCQUFKO0FBQVgsQ0FBVjtBQUtBQyxRQUFRLENBQUMsK0JBQUQsRUFBa0MsWUFBSTtBQUMxQ0MsRUFBQUEsRUFBRSxDQUFDLG1CQUFELEVBQXNCLFlBQU07QUFDMUIsUUFBTUMsU0FBUyxHQUFHLHFCQUFTLGdDQUFDLHFCQUFELE9BQVQsQ0FBbEI7QUFDQSxRQUFNQyxPQUFPLEdBQUdELFNBQVMsQ0FBQ0UsSUFBVixDQUFlLFlBQWYsQ0FBaEI7QUFDQUMsSUFBQUEsT0FBTyxDQUFDQyxHQUFSLENBQVlILE9BQU8sQ0FBQ0ksS0FBUixFQUFaO0FBRUgsR0FMQyxDQUFGO0FBTUgsQ0FQTyxDQUFSIiwic291cmNlc0NvbnRlbnQiOlsiaW1wb3J0IFJlYWN0IGZyb20gJ3JlYWN0JztcbmltcG9ydCB7IGNvbmZpZ3VyZSwgbW91bnQsIHNoYWxsb3cgfSBmcm9tICdlbnp5bWUnO1xuaW1wb3J0IEFkYXB0ZXIgZnJvbSAnZW56eW1lLWFkYXB0ZXItcmVhY3QtMTYnO1xuXG5jb25maWd1cmUoeyBhZGFwdGVyOiBuZXcgQWRhcHRlcigpIH0pO1xuXG5pbXBvcnQgUGhvdG9ncmlkIGZyb20gJy4uLy4uL2NvbXBvbmVudHMvUGhvdG9ncmlkJztcblxuXG5kZXNjcmliZSgnVGhpcyBpcyBhIFBob3RvZ3JpZCBjb21wb25lbnQnLCAoKT0+e1xuICAgIGl0KCdUaGVyZSBpcyBhIGhlYWRlcicsICgpID0+IHtcbiAgICAgICAgY29uc3QgY29tcG9uZW50ID0gc2hhbGxvdyggPFBob3RvZ3JpZCAvPiApO1xuICAgICAgICBjb25zdCBjb250ZW50ID0gY29tcG9uZW50LmZpbmQoJ3Bob3RvLWdyaWQnKTtcbiAgICAgICAgY29uc29sZS5sb2coY29udGVudC5kZWJ1ZygpKVxuXG4gICAgfSk7XG59KVxuXG5cbiJdfQ==

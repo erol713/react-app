@@ -1,0 +1,47 @@
+f1a0e4656e51fb97c46c2c7e811f282c
+"use strict";
+
+var _react = _interopRequireDefault(require("react"));
+
+var _enzyme = require("enzyme");
+
+var _enzymeAdapterReact = _interopRequireDefault(require("enzyme-adapter-react-16"));
+
+var _Photo = _interopRequireDefault(require("../../components/Photo"));
+
+function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { "default": obj }; }
+
+/* eslint-disable indent */
+(0, _enzyme.configure)({
+  adapter: new _enzymeAdapterReact["default"]()
+});
+
+var setUp = function setUp() {
+  var props = arguments.length > 0 && arguments[0] !== undefined ? arguments[0] : {};
+  var component = (0, _enzyme.shallow)(_react["default"].createElement(_Photo["default"], props));
+  return component;
+};
+
+describe('This is a Photo component', function () {
+  var content;
+  beforeEach(function () {
+    var props = {
+      key: 1,
+      i: 1,
+      post: {
+        caption: 'test',
+        code: 'BAcyDyQwcXX',
+        dislikes: 34,
+        display_src: 'https://picsum.photos/400/400/?image=25',
+        id: '1161022966406956503',
+        likes: 57,
+        userId: '1111'
+      }
+    };
+    content = setUp(props);
+  });
+  it('There is a Image', function () {
+    expect(content.find('img'));
+  });
+});
+//# sourceMappingURL=data:application/json;charset=utf-8;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbIlBob3RvVGVzdC5qc3giXSwibmFtZXMiOlsiYWRhcHRlciIsIkFkYXB0ZXIiLCJzZXRVcCIsInByb3BzIiwiY29tcG9uZW50IiwiZGVzY3JpYmUiLCJjb250ZW50IiwiYmVmb3JlRWFjaCIsImtleSIsImkiLCJwb3N0IiwiY2FwdGlvbiIsImNvZGUiLCJkaXNsaWtlcyIsImRpc3BsYXlfc3JjIiwiaWQiLCJsaWtlcyIsInVzZXJJZCIsIml0IiwiZXhwZWN0IiwiZmluZCJdLCJtYXBwaW5ncyI6Ijs7QUFDQTs7QUFDQTs7QUFDQTs7QUFDQTs7OztBQUpBO0FBTUEsdUJBQVU7QUFBRUEsRUFBQUEsT0FBTyxFQUFFLElBQUlDLDhCQUFKO0FBQVgsQ0FBVjs7QUFFQSxJQUFNQyxLQUFLLEdBQUcsU0FBUkEsS0FBUSxHQUFnQjtBQUFBLE1BQWZDLEtBQWUsdUVBQVAsRUFBTztBQUMxQixNQUFNQyxTQUFTLEdBQUcscUJBQVEsZ0NBQUMsaUJBQUQsRUFBV0QsS0FBWCxDQUFSLENBQWxCO0FBQ0EsU0FBT0MsU0FBUDtBQUNILENBSEQ7O0FBS0FDLFFBQVEsQ0FBQywyQkFBRCxFQUE4QixZQUFNO0FBQ3hDLE1BQUlDLE9BQUo7QUFDQUMsRUFBQUEsVUFBVSxDQUFDLFlBQU07QUFDYixRQUFNSixLQUFLLEdBQUc7QUFDVkssTUFBQUEsR0FBRyxFQUFFLENBREs7QUFFVkMsTUFBQUEsQ0FBQyxFQUFFLENBRk87QUFHVkMsTUFBQUEsSUFBSSxFQUFFO0FBQ0ZDLFFBQUFBLE9BQU8sRUFBRSxNQURQO0FBRUZDLFFBQUFBLElBQUksRUFBRSxhQUZKO0FBR0ZDLFFBQUFBLFFBQVEsRUFBRSxFQUhSO0FBSUZDLFFBQUFBLFdBQVcsRUFBRSx5Q0FKWDtBQUtGQyxRQUFBQSxFQUFFLEVBQUUscUJBTEY7QUFNRkMsUUFBQUEsS0FBSyxFQUFFLEVBTkw7QUFPRkMsUUFBQUEsTUFBTSxFQUFFO0FBUE47QUFISSxLQUFkO0FBYUFYLElBQUFBLE9BQU8sR0FBR0osS0FBSyxDQUFDQyxLQUFELENBQWY7QUFDSCxHQWZTLENBQVY7QUFpQkFlLEVBQUFBLEVBQUUsQ0FBQyxrQkFBRCxFQUFxQixZQUFNO0FBQ3pCQyxJQUFBQSxNQUFNLENBQUNiLE9BQU8sQ0FBQ2MsSUFBUixDQUFhLEtBQWIsQ0FBRCxDQUFOO0FBQ1AsR0FGSyxDQUFGO0FBR0gsQ0F0Qk8sQ0FBUiIsInNvdXJjZXNDb250ZW50IjpbIi8qIGVzbGludC1kaXNhYmxlIGluZGVudCAqL1xuaW1wb3J0IFJlYWN0IGZyb20gJ3JlYWN0JztcbmltcG9ydCB7IGNvbmZpZ3VyZSwgbW91bnQsIHNoYWxsb3cgfSBmcm9tICdlbnp5bWUnO1xuaW1wb3J0IEFkYXB0ZXIgZnJvbSAnZW56eW1lLWFkYXB0ZXItcmVhY3QtMTYnO1xuaW1wb3J0IFBob3RvIGZyb20gJy4uLy4uL2NvbXBvbmVudHMvUGhvdG8nO1xuXG5jb25maWd1cmUoeyBhZGFwdGVyOiBuZXcgQWRhcHRlcigpIH0pO1xuXG5jb25zdCBzZXRVcCA9IChwcm9wcyA9IHt9KSA9PiB7XG4gICAgY29uc3QgY29tcG9uZW50ID0gc2hhbGxvdyg8UGhvdG8gey4uLnByb3BzfSAvPik7XG4gICAgcmV0dXJuIGNvbXBvbmVudDtcbn07XG5cbmRlc2NyaWJlKCdUaGlzIGlzIGEgUGhvdG8gY29tcG9uZW50JywgKCkgPT4ge1xuICAgIGxldCBjb250ZW50O1xuICAgIGJlZm9yZUVhY2goKCkgPT4ge1xuICAgICAgICBjb25zdCBwcm9wcyA9IHtcbiAgICAgICAgICAgIGtleTogMSxcbiAgICAgICAgICAgIGk6IDEsXG4gICAgICAgICAgICBwb3N0OiB7XG4gICAgICAgICAgICAgICAgY2FwdGlvbjogJ3Rlc3QnLFxuICAgICAgICAgICAgICAgIGNvZGU6ICdCQWN5RHlRd2NYWCcsXG4gICAgICAgICAgICAgICAgZGlzbGlrZXM6IDM0LFxuICAgICAgICAgICAgICAgIGRpc3BsYXlfc3JjOiAnaHR0cHM6Ly9waWNzdW0ucGhvdG9zLzQwMC80MDAvP2ltYWdlPTI1JyxcbiAgICAgICAgICAgICAgICBpZDogJzExNjEwMjI5NjY0MDY5NTY1MDMnLFxuICAgICAgICAgICAgICAgIGxpa2VzOiA1NyxcbiAgICAgICAgICAgICAgICB1c2VySWQ6ICcxMTExJyxcbiAgICAgICAgICAgIH0sXG4gICAgICAgIH07XG4gICAgICAgIGNvbnRlbnQgPSBzZXRVcChwcm9wcyk7XG4gICAgfSk7XG5cbiAgICBpdCgnVGhlcmUgaXMgYSBJbWFnZScsICgpID0+IHtcbiAgICAgICAgZXhwZWN0KGNvbnRlbnQuZmluZCgnaW1nJykpO1xufSk7XG59KTtcbiJdfQ==

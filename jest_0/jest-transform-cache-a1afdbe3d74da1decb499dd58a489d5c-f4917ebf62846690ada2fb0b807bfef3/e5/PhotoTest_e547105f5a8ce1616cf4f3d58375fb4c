@@ -1,0 +1,47 @@
+d5ebafcd5ac9f57c531fad87a5453bbe
+"use strict";
+
+var _react = _interopRequireDefault(require("react"));
+
+var _enzyme = require("enzyme");
+
+var _enzymeAdapterReact = _interopRequireDefault(require("enzyme-adapter-react-16"));
+
+var _Photo = _interopRequireDefault(require("../../components/Photo"));
+
+function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { "default": obj }; }
+
+/* eslint-disable indent */
+(0, _enzyme.configure)({
+  adapter: new _enzymeAdapterReact["default"]()
+});
+
+var setUp = function setUp() {
+  var props = arguments.length > 0 && arguments[0] !== undefined ? arguments[0] : {};
+  var component = (0, _enzyme.shallow)(_react["default"].createElement(_Photo["default"], props));
+  return component;
+};
+
+describe('This is a Photo component', function () {
+  var content;
+  beforeEach(function () {
+    var props = {
+      key: 1,
+      i: 1,
+      post: {
+        caption: 'test',
+        code: 'randomcode',
+        dislikes: 34,
+        display_src: 'https://picsum.photos/400/400/?image=25',
+        id: '1161022966406956503',
+        likes: 57,
+        userId: '1111'
+      }
+    };
+    content = setUp(props);
+  });
+  it('There is a Image', function () {
+    expect(content.find('img'));
+  });
+});
+//# sourceMappingURL=data:application/json;charset=utf-8;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbIlBob3RvVGVzdC5qc3giXSwibmFtZXMiOlsiYWRhcHRlciIsIkFkYXB0ZXIiLCJzZXRVcCIsInByb3BzIiwiY29tcG9uZW50IiwiZGVzY3JpYmUiLCJjb250ZW50IiwiYmVmb3JlRWFjaCIsImtleSIsImkiLCJwb3N0IiwiY2FwdGlvbiIsImNvZGUiLCJkaXNsaWtlcyIsImRpc3BsYXlfc3JjIiwiaWQiLCJsaWtlcyIsInVzZXJJZCIsIml0IiwiZXhwZWN0IiwiZmluZCJdLCJtYXBwaW5ncyI6Ijs7QUFDQTs7QUFDQTs7QUFDQTs7QUFDQTs7OztBQUpBO0FBTUEsdUJBQVU7QUFBRUEsRUFBQUEsT0FBTyxFQUFFLElBQUlDLDhCQUFKO0FBQVgsQ0FBVjs7QUFFQSxJQUFNQyxLQUFLLEdBQUcsU0FBUkEsS0FBUSxHQUFnQjtBQUFBLE1BQWZDLEtBQWUsdUVBQVAsRUFBTztBQUMxQixNQUFNQyxTQUFTLEdBQUcscUJBQVEsZ0NBQUMsaUJBQUQsRUFBV0QsS0FBWCxDQUFSLENBQWxCO0FBQ0EsU0FBT0MsU0FBUDtBQUNILENBSEQ7O0FBS0FDLFFBQVEsQ0FBQywyQkFBRCxFQUE4QixZQUFNO0FBRXhDLE1BQUlDLE9BQUo7QUFDQUMsRUFBQUEsVUFBVSxDQUFDLFlBQU07QUFDYixRQUFNSixLQUFLLEdBQUc7QUFDVkssTUFBQUEsR0FBRyxFQUFFLENBREs7QUFFVkMsTUFBQUEsQ0FBQyxFQUFFLENBRk87QUFHVkMsTUFBQUEsSUFBSSxFQUFFO0FBQ0ZDLFFBQUFBLE9BQU8sRUFBRSxNQURQO0FBRUZDLFFBQUFBLElBQUksRUFBRSxZQUZKO0FBR0ZDLFFBQUFBLFFBQVEsRUFBRSxFQUhSO0FBSUZDLFFBQUFBLFdBQVcsRUFBRSx5Q0FKWDtBQUtGQyxRQUFBQSxFQUFFLEVBQUUscUJBTEY7QUFNRkMsUUFBQUEsS0FBSyxFQUFFLEVBTkw7QUFPRkMsUUFBQUEsTUFBTSxFQUFFO0FBUE47QUFISSxLQUFkO0FBYUFYLElBQUFBLE9BQU8sR0FBR0osS0FBSyxDQUFDQyxLQUFELENBQWY7QUFDSCxHQWZTLENBQVY7QUFpQkFlLEVBQUFBLEVBQUUsQ0FBQyxrQkFBRCxFQUFxQixZQUFNO0FBQ3pCQyxJQUFBQSxNQUFNLENBQUNiLE9BQU8sQ0FBQ2MsSUFBUixDQUFhLEtBQWIsQ0FBRCxDQUFOO0FBQ0gsR0FGQyxDQUFGO0FBR0gsQ0F2Qk8sQ0FBUiIsInNvdXJjZXNDb250ZW50IjpbIi8qIGVzbGludC1kaXNhYmxlIGluZGVudCAqL1xuaW1wb3J0IFJlYWN0IGZyb20gJ3JlYWN0JztcbmltcG9ydCB7IGNvbmZpZ3VyZSwgbW91bnQsIHNoYWxsb3cgfSBmcm9tICdlbnp5bWUnO1xuaW1wb3J0IEFkYXB0ZXIgZnJvbSAnZW56eW1lLWFkYXB0ZXItcmVhY3QtMTYnO1xuaW1wb3J0IFBob3RvIGZyb20gJy4uLy4uL2NvbXBvbmVudHMvUGhvdG8nO1xuXG5jb25maWd1cmUoeyBhZGFwdGVyOiBuZXcgQWRhcHRlcigpIH0pO1xuXG5jb25zdCBzZXRVcCA9IChwcm9wcyA9IHt9KSA9PiB7XG4gICAgY29uc3QgY29tcG9uZW50ID0gc2hhbGxvdyg8UGhvdG8gey4uLnByb3BzfSAvPik7XG4gICAgcmV0dXJuIGNvbXBvbmVudDtcbn07XG5cbmRlc2NyaWJlKCdUaGlzIGlzIGEgUGhvdG8gY29tcG9uZW50JywgKCkgPT4ge1xuXG4gICAgbGV0IGNvbnRlbnQ7XG4gICAgYmVmb3JlRWFjaCgoKSA9PiB7XG4gICAgICAgIGNvbnN0IHByb3BzID0ge1xuICAgICAgICAgICAga2V5OiAxLFxuICAgICAgICAgICAgaTogMSxcbiAgICAgICAgICAgIHBvc3Q6IHtcbiAgICAgICAgICAgICAgICBjYXB0aW9uOiAndGVzdCcsXG4gICAgICAgICAgICAgICAgY29kZTogJ3JhbmRvbWNvZGUnLFxuICAgICAgICAgICAgICAgIGRpc2xpa2VzOiAzNCxcbiAgICAgICAgICAgICAgICBkaXNwbGF5X3NyYzogJ2h0dHBzOi8vcGljc3VtLnBob3Rvcy80MDAvNDAwLz9pbWFnZT0yNScsXG4gICAgICAgICAgICAgICAgaWQ6ICcxMTYxMDIyOTY2NDA2OTU2NTAzJyxcbiAgICAgICAgICAgICAgICBsaWtlczogNTcsXG4gICAgICAgICAgICAgICAgdXNlcklkOiAnMTExMScsXG4gICAgICAgICAgICB9LFxuICAgICAgICB9O1xuICAgICAgICBjb250ZW50ID0gc2V0VXAocHJvcHMpO1xuICAgIH0pO1xuXG4gICAgaXQoJ1RoZXJlIGlzIGEgSW1hZ2UnLCAoKSA9PiB7XG4gICAgICAgIGV4cGVjdChjb250ZW50LmZpbmQoJ2ltZycpKTtcbiAgICB9KTtcbn0pO1xuIl19
